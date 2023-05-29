@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+  compiler:
+    container_name: compiler
+    image: compiler:latest
+    build: ./compiler
+    volumes:
+      - ./compiler:/compiler
